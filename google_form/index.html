@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formstyle.css">
+    <title>Got some time for Survey?</title>
+</head>
+<body>
+    <form method="post" action="googleform1.html">
+    <main>
+        <div class="head">
+        <header>
+            <h2>나와 잘 맞는 회사는?</h2>
+            <p class="description">가고싶은 회사에 대한 호감도를 조사합니다. 아이고 의미 없지만 해봐야죠.</p>
+            <p class="email">wtawonlife@gmail.com(공유되지 않음) <a href="#">계정전환</a></p>
+        </header>
+        </div>
+        <fieldset class="like" required>
+            다음 문자 중에 왠지 마음에 드는 것을 하나 고르세요.
+            <p>
+            <label><input type="radio" name="company" value="naver">네</label>
+            <label><input type="radio" name="company" value="kakao">카</label>
+            <label><input type="radio" name="company" value="line">라</label>
+            <label><input type="radio" name="company" value="coupang">쿠</label>
+            <label><input type="radio" name="company" value="baemin">배</label>
+            </p>
+        </fieldset>
+        <fieldset class="messanger" required>
+            친구와 문자를 합니다. 다음중 어떤 메신저를 이용하시겠습니까? 모두 골라주세요.<p>
+            <label><input type="checkbox" name="msg" value="katalk">카카오톡</label>
+            <label><input type="checkbox" name="msg" value="line">라인</label>
+            <label><input type="checkbox" name="msg" value="dm">인스타그램 디엠</label>    
+            <label><input type="checkbox" name="msg" value="nate">네이트온</label>
+            <label><input type="checkbox" name="msg" value="buddy">버디버디</label>
+
+            </fieldset>
+        <fieldset class="will-text" id="will-sentence" required>
+            면접에서 자신의 포부를 한 문장으로 표현한다면?<p></p>
+            <input type="text" name="will" placeholder="내 답변">
+        </fieldset>
+
+        <fieldset class="answer" id="final-interview" required>
+            지금 당신은 한 기업의 최종 면접을 앞두고 있습니다.<br>면접장에 들어가기 직전, 자기 자신에게 해주고 싶은 말은?
+            <p></p><textarea name="my-answer" cols="60" rows="6" placeholder="편하게 작성해 주세요."></textarea>
+        </fieldset>
+
+        <fieldset class="interview" id="want-to-hear" required>
+            다음 중 면접에서 가장 듣고 싶은 말을 선택해 주세요.
+            <p>
+                <select name="hear">
+                    <option value="">선택</option>
+                    <option value="hardwork">정말 열심히 하셨네요.</option>
+                    <option value="face">인상이 아주 좋아보이세요.</option>
+                    <option value="money">연봉은 어느 정도면 괜찮으세요?</option>
+                    <option value="when">언제부터 출근 가능하세요?</option>
+                </select>
+            </fieldset>
+
+        <fieldset class="date" id="starting-date" required>
+            취업을 희망하는 날짜를 선택해주세요.
+            <p>
+            <input type="date" name="work-date">
+        </fieldset>
+
+        <fieldset class="time" id="starting-time" required>
+            업무를 시작하기에 가장 적당한 시간을 골라주세요.
+            <p>
+            <input type="time" name="work-time" required>
+        </fieldset>
+        <fieldset class="button">
+        <button type="submit" onclick="alert('수고하셨습니다!')">제출</button>
+        <button type="reset">양식 지우기</button>
+        </fieldset>
+        </form>       
+    </main>
+</body>
+</html>
