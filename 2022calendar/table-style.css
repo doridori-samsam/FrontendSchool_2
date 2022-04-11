@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    font-family:'Pacifico', cursive;
+    background-color:palegoldenrod;
+    
+}
+
+main{
+    margin:100px auto;
+    height:auto;
+    width:1000px;
+    /* border:2px solid blue; */
+    border-radius:20px;
+    background-color:white;
+    padding-top:40px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+main h1{
+    font-size:52px;
+    margin:0 auto;
+    text-align:center;
+    font-weight:lighter;
+    color:crimson;
+    margin-bottom:40px;
+}
+
+div{
+    margin-bottom:20px;
+}
+
+table{ 
+    display:inline;
+    text-align:center;
+    margin:20px;
+    
+}
+
+td:nth-of-type(7){
+    color:red;
+}
+
+
+
+.one{
+    /* border:1px solid lightgray; */
+    text-align:center;
+}
+.two{
+    /* border:1px solid lightgray; */
+    text-align:center;
+}
+.three{
+    /* border:1px solid lightgray; */
+    text-align:center;
+}
+.four{
+    /* border:1px solid lightgray; */
+    text-align:center;
+}
+
+table caption{
+    font-size:32px;
+    font-weight:lighter;
+}
+
+thead, tbody{
+    font-size:20px;
+}
+
+thead{
+    font-weight:lighter;
+}
+
