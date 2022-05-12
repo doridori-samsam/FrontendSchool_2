@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM practice - change background color</title>
+    <style>
+        div.box{
+            margin: 50px auto;
+            width: 500px;
+            height: 500px;
+            background-color: black;
+        }
+        div.btns{
+            width: 300px;
+            margin: 50px auto;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="btns">
+    <button class="red">빨강</button>
+    <button class="yellow">노랑</button>
+    <button class="green">초록</button>
+    </div>
+    <script type="text/javascript">
+        const redBtn = document.querySelector('button.red');
+        const ywBtn = document.querySelector('button.yellow');
+        const gnBtn = document.querySelector('button.green');
+        redBtn.addEventListener('click', function(){
+            document.querySelector('div.box').style.backgroundColor = 'red';
+            ;});
+        ywBtn.addEventListener('click', function(){
+            document.querySelector('div.box').style.backgroundColor = 'yellow';
+            ;});
+        gnBtn.addEventListener('click', function(){
+            document.querySelector('div.box').style.backgroundColor = 'green';
+            ;});
+
+            //addEventListener안에서 querySelector는 비용(메모리)가 많이 들어서 처리 속도가 느리다.
+    </script>
+</body>
+</html>
