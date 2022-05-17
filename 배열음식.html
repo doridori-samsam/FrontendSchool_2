@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+
+    <script>
+        const foods = ['짜장면', '닭발', '감자탕', '시카고피자']
+        function Foodbot (FoodNames) {
+            this.menu = foodNames;
+            this.sayMenu = function(){
+                this.menu[Math.floor(Math.random() * foods.length)];
+            }
+        }
+
+        const foodBotfred1 = new Foodbot(foods);
+    </script>
+</body>
+</html>
